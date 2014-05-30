@@ -7,6 +7,12 @@ p1 {
 
 .pizzas{
     color: #f2352c;
+    margin: 10px 0px 15px 0px;
+}
+
+.pizza-col,.pasta-col, .fisch-col{
+    
+    margin: 10px 20px 0px 20px;
 }
 
 .pasta{
