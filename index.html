@@ -47,7 +47,7 @@
                         <a href="#about">Über uns</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#download">Menu</a>
+                        <a href="#download">Unsere Karte</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Kontakt</a>
@@ -82,7 +82,7 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Über uns</h2>
                 
-                <p>Mein Name ist Nunzio Grossi. Ich bin seit über 15 Jahren der Inhaber des Restaurants "Regenbogen". Ich komme aus der Provinz Salerno. Mein Wunsch ist es Ihnen die traditionelle italienische Küche in unseren Restaurant anzubieten. Das ist die Küche die meine Kindheit prägte, die meine Mutter auf den Tisch legte. Das ist die Erinnerung an die einfachen aber intensiven Aromen Italiens. Mein Motto: einfach, sauber und erlich. Abhängig von der Verfügbarkeit von Zutaten, ändern wir unsere Speisekarte mehrmals im Jahr. Das Einzigen was sich nicht ändert, ist unsere Gastfreundschaft und unsere aufrichtige Leidenschaft für diese Arbeit.</p>
+                <p>Mein Name ist Nunzio Grossi. Ich komme aus der Provinz Salerno und bin seit über 15 Jahren der Inhaber des Restaurants "Regenbogen". Mein Wunsch ist es Ihnen die traditionelle italienische Küche in unserem Restaurant anzubieten. Mein Motto: einfach, sauber und ehrlich. Abhängig von Jahreszeiten, ändern wir unsere Speisekarte mehrmals im Jahr. Das Einzige, das sich nicht ändert, ist unsere Gastfreundschaft und unsere aufrichtige Leidenschaft für das Essen.</p>
         
             </div>
         </div>
@@ -91,11 +91,41 @@
     <section id="download" class="content-section text-center">
         <div class="download-section">
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Karte </h2>
-                    <p>hier können SIe die Karte Downloaden</p>
-                    <a href="http://startbootstrap.com/grayscale" class="btn btn-default btn-lg">Download Menu</a>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2>Usere Karte </h2>
+                        <p>Alle Speisen auch zum Mitnehmen</p>
+                        
+                    </div>
                 </div>
+                
+                 <!-- Karte -->
+                
+                 <div class="row">
+                    <div class="col-lg-4 pizzas">
+                        <img src="images/pizza.jpg" class="menu-img">   
+                        <div class="row">
+                            <div class="col-lg-4"> <h5>Pizza Row COl</h5> </div>
+                        </div>                     
+                    </div>
+                    <div class="col-lg-4 pasta">
+                        <img src="images/spaghetti_frutte_di_mare.jpg" class="menu-img">                         
+                    </div>
+                    <div class="col-lg-4 fisch">
+                        <img src="images/fisch.jpg" class="menu-img"> 
+                    </div>
+                    
+                </div>
+
+
+               
+
+                <div class="row abstand-oben">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <a href="http://startbootstrap.com/grayscale" class="btn btn-default btn-lg">Download Menu</a>
+                     </div>                    
+                </div>
+
             </div>
         </div>
     </section>
@@ -103,8 +133,8 @@
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Kontakt</h2>
-               <p>Senefelderstraße 32<br>70176 Stuttgart<br>Tel: 0711 6151889</p>
+                <h2>Öffnungszeiten</h2>
+                <p>kein Ruhetag.<br>Mittagstisch: 11:00 - 14:00<br>und Abends: 17:00 - 23:00<br><br>Senefelderstraße 32<br>70176 Stuttgart<br>Tel: 0711 6151889</p>
                 <p>info@ristorante-regenbogen.com</p>
                 
             </div>
@@ -119,10 +149,27 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - You will need to use your own API key to use the map feature -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+
+    <script>
+        
+        var map;
+        function initialize() {
+            var mapOptions = {
+               zoom: 19,
+               center: new google.maps.LatLng(48.773,9.16261)
+            };
+            
+            map = new google.maps.Map(document.getElementById('map'),mapOptions);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
 
 </body>
 
