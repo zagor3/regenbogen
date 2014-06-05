@@ -7,24 +7,23 @@ p1 {
 
 p2 {
     margin: 0 0 5px;
-    font-size: 18px;
-    line-height: 0.8;
+    font-size: 15px;
+    line-height: 0.2;
     text-align: left;
 }
 
 .pizzas, .antipasti{
     color: #f2352c;
-    margin: 10px 0px 15px 0px;
+    margin: 0px;
 }
 
-.pizza-col,.pasta-col, .fisch-col, .antipasti-col{
-    
-    margin: 10px 20px 30px 20px;
+.essen-col{    
+    margin: 10px 0px 5px 0px;
 }
 
 essen-description{
     margin: 0px 0 5px 0px;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 0.5;
     text-align: left;    
 }
@@ -34,6 +33,12 @@ essen-header{
     font-size: 14px;
     line-height: 1.0;    
 }
+
+.antipasti{
+    color: #c1dc67;
+}
+
+
 .pasta{
     color: #c1dc67;
 }
@@ -43,7 +48,7 @@ essen-header{
 }
 
 .menu-img{
-    margin: 10px 0px 15px 0px;
+    margin: 30px 0px 15px 0px;
     width: 250px;
     height: 250px;    
 }
